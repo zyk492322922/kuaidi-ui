@@ -1,0 +1,9 @@
+<view class="container">
+	<view class="page-section-spacing">
+		<swiper class="swiper" indicator-dots="false" autoplay="true" interval="8000" duration="1500">
+			<swiper-item wx:for="{{homeBannerList}}" wx:for-item="banner">
+				<image src="{{banner.img}}" mode="aspectFill"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+</view>

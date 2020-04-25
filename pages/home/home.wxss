@@ -1,0 +1,14 @@
+/**home.wxss**/
+.page-section-spacing {
+	width: 90%;
+	height: 350rpx;
+}
+.swiper {
+	height: 350rpx;
+}
+
+image {
+	height: 350rpx;
+	width: 100%;
+	border-radius: 20rpx;
+}
