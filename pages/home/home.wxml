@@ -1,9 +1,30 @@
 <view class="container">
+	<!-- 顶部轮播图 -->
 	<view class="page-section-spacing">
 		<swiper class="swiper" indicator-dots="false" autoplay="true" interval="8000" duration="1500">
 			<swiper-item wx:for="{{homeBannerList}}" wx:for-item="banner">
-				<image src="{{banner.img}}" mode="aspectFill"></image>
+				<image class="banner-pic" src="{{banner.img}}" mode="aspectFill"></image>
 			</swiper-item>
 		</swiper>
+	</view>
+	
+	<!-- 中部导航按钮 -->
+	<view class="navi-tab">
+		<view class="navi-tab-item" wx:for="{{tabList}}" wx:for-item="tab">
+			<image class="navi-pic" src="{{tab.img}}"></image>
+			<view class="txt">{{tab.content}}</view>
+		</view>
+	</view>
+	
+	<!-- 底部数据展示 -->
+	<view class="flex-col bottom-data">
+		<view class="flex data-title">
+			<image class="data-title-pic" src="../../image/gift.png"></image>
+			<view class="txt">我的履约</view>  
+		</view>
+		<view class="flex data-content">
+			<view></view>
+		</view>
+		
 	</view>
 </view>

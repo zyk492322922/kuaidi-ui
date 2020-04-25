@@ -7,5 +7,18 @@
   justify-content: space-between;
   padding: 30rpx 0;
   box-sizing: border-box;
-  background: #dedcdb;
+  background: #f4f3f3;
+  font-family: sans-serif;
 } 
+
+.flex {
+	display: flex;
+	flex-direction: row;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+.txt {
+	color: #5d5d8c;
+}

@@ -1,4 +1,7 @@
 /**home.wxss**/
+.container {
+  font-size: 30rpx;
+} 
 .page-section-spacing {
 	width: 90%;
 	height: 350rpx;
@@ -7,8 +10,58 @@
 	height: 350rpx;
 }
 
-image {
+.banner-pic {
 	height: 350rpx;
 	width: 100%;
 	border-radius: 20rpx;
+}
+
+/* navi-tab.wxss */
+.navi-tab{
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	height: 260rpx;
+	background: #ffffff;
+	margin-top: 36rpx;
+}
+
+.navi-pic {
+	margin-top: 30rpx;
+	width: 85rpx;
+	height: 85rpx;
+	padding-bottom: 25rpx;
+}
+
+.navi-tab-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 底部数据展示 */
+.bottom-data {
+	padding-top: 25rpx;
+	width: 90%;
+	height: 300rpx;
+}
+.data-title{
+	justify-content: flex-start;
+	align-items: center;
+	width: 90%;
+	height: 50rpx;
+	font-size: 35rpx;
+}
+.data-title-pic {
+	width: 45rpx;
+	height: 40rpx;
+	margin-right: 13rpx;
+}
+
+.data-content {
+	justify-content: center;
+	width: 90%;
+	height: 220rpx;
+	padding-top: 25rpx;
 }
