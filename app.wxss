@@ -9,16 +9,25 @@
   box-sizing: border-box;
   background: #f4f3f3;
   font-family: sans-serif;
+  font-size: 25rpx;
 } 
 
 .flex {
 	display: flex;
 	flex-direction: row;
 }
+/* 水平居中 */
+.justify-center {
+	justify-content: center;
+}
+/* 垂直居中 */
+.align-items {
+	align-items: center
+}
 .flex-col {
 	display: flex;
 	flex-direction: column;
 }
 .txt {
-	color: #5d5d8c;
+	color: #0e0e15;
 }

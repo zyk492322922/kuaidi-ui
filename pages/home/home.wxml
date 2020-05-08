@@ -16,6 +16,9 @@
 		</view>
 	</view>
 	
+	<!-- 登录信息提示模块 -->
+	<view></view>
+	
 	<!-- 底部数据展示 -->
 	<view class="flex-col bottom-data">
 		<view class="flex data-title">
@@ -23,7 +26,21 @@
 			<view class="txt">我的履约</view>  
 		</view>
 		<view class="flex data-content">
-			<view></view>
+			<view class="flex-col justify-center align-items">
+				<image class="data-content-pic data-content-padding" src="../../image/navi-tab1.png"></image>
+				<view class="data-content-padding">当前奖励金</view>
+				<view>0.0元</view>
+			</view>
+			<view class="flex-col justify-center align-items">
+				<image class="data-content-pic data-content-padding" src="../../image/navi-tab1.png"></image>
+				<view class="data-content-padding">下单次数</view>
+				<view>5次</view>
+			</view>
+			<view class="flex-col justify-center align-items">
+				<image class="data-content-pic data-content-padding" src="../../image/navi-tab1.png"></image>
+				<view class="data-content-padding">履约次数</view>
+				<view>4次</view>
+			</view>
 		</view>
 		
 	</view>
