@@ -37,6 +37,30 @@
 	align-items: center;
 }
 
+.navi-to-order {
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	border-radius: 40rpx;
+	background: #ffffff;
+	margin-top: 25rpx;
+}
+.navi-to-order image {
+	width: 50%;
+	height: 115rpx;
+}
+
+.login-btn {
+	display: flex;
+	background: #BCFFF5;
+	color: #14B19E;
+	border-radius: 35rpx;
+	height: 80rpx;
+	justify-content: center;
+	align-items: center;
+}
+
+
 /* 底部数据展示 */
 .bottom-data {
 	padding-top: 25rpx;

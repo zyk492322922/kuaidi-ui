@@ -2,7 +2,7 @@
 	<!-- 顶部轮播图 -->
 	<view class="page-section-spacing">
 		<swiper class="swiper" indicator-dots="false" autoplay="true" interval="8000" duration="1500">
-			<swiper-item wx:for="{{homeBannerList}}" wx:for-item="banner">
+			<swiper-item wx:for="{{homeBannerList}}" wx:for-item="banner" wx:key="banner">
 				<image class="banner-pic" src="{{banner.img}}" mode="aspectFill"></image>
 			</swiper-item>
 		</swiper>
@@ -10,14 +10,17 @@
 	
 	<!-- 中部导航按钮 -->
 	<view class="navi-tab">
-		<view class="navi-tab-item" wx:for="{{tabList}}" wx:for-item="tab">
+		<view class="navi-tab-item" wx:for="{{tabList}}" wx:for-item="tab" wx:key="tab">
 			<image class="navi-pic" src="{{tab.img}}"></image>
 			<view class="txt">{{tab.content}}</view>
 		</view>
 	</view>
 	
-	<!-- 登录信息提示模块 -->
-	<view></view>
+	<!-- 业务触发模块 -->
+	<view class="flex navi-to-order">
+		<image src="../../image/login.png"></image>
+		<button class="login-btn" ><view>去登录></view></button>
+	</view>
 	
 	<!-- 底部数据展示 -->
 	<view class="flex-col bottom-data">
@@ -27,17 +30,17 @@
 		</view>
 		<view class="flex data-content">
 			<view class="flex-col justify-center align-items">
-				<image class="data-content-pic data-content-padding" src="../../image/navi-tab1.png"></image>
+				<image class="data-content-pic data-content-padding" src="../../image/icon/curr-jiangli.png"></image>
 				<view class="data-content-padding">当前奖励金</view>
 				<view>0.0元</view>
 			</view>
 			<view class="flex-col justify-center align-items">
-				<image class="data-content-pic data-content-padding" src="../../image/navi-tab1.png"></image>
+				<image class="data-content-pic data-content-padding" src="../../image/icon/order.png"></image>
 				<view class="data-content-padding">下单次数</view>
 				<view>5次</view>
 			</view>
 			<view class="flex-col justify-center align-items">
-				<image class="data-content-pic data-content-padding" src="../../image/navi-tab1.png"></image>
+				<image class="data-content-pic data-content-padding" src="../../image/icon/all-jiangli.png"></image>
 				<view class="data-content-padding">履约次数</view>
 				<view>4次</view>
 			</view>
