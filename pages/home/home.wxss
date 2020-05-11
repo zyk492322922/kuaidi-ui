@@ -1,6 +1,6 @@
 /**home.wxss**/
 .page-section-spacing {
-	width: 95%;
+	width: var(--body-width);
 }
 .swiper {
 	height: 250rpx;
@@ -16,9 +16,9 @@
 .navi-tab{
 	display: flex;
 	justify-content: space-around;
-	width: 95%;
+	width: var(--body-width);
 	height: 230rpx;
-	background: #ffffff;
+	background: var(--bg-color-white);
 	margin-top: 36rpx;
 	border-radius: 15rpx;
 }
@@ -40,9 +40,9 @@
 .navi-to-order {
 	justify-content: center;
 	align-items: center;
-	width: 95%;
+	width: var(--body-width);
 	border-radius: 40rpx;
-	background: #ffffff;
+	background: var(--bg-color-white);
 	margin-top: 25rpx;
 }
 .navi-to-order image {
@@ -64,7 +64,7 @@
 /* 底部数据展示 */
 .bottom-data {
 	padding-top: 25rpx;
-	width: 95%;
+	width: var(--body-width);
 	height: 300rpx;
 }
 .data-title{
@@ -77,7 +77,7 @@
 	
 	
 .data-title-icon {
-	color: #7ACDBD;
+	color: var(--icon-color)
 	font-size: 50rpx;
 	margin-right: 13rpx;
 }
@@ -101,5 +101,5 @@
 	font-size: 70rpx;
 	padding-bottom: 25rpx;
 	align-items: center;
-	color: #7ACDBD;
+	color: var(--icon-color)
 }

@@ -1,5 +1,11 @@
  @import "style/iconfont.wxss"
-
+ 
+/* 全局样式预定义 */
+page {
+	--icon-color:#7ACDBD;
+	--bg-color-white: #ffffff;
+	--body-width: 95%;
+}
 /**app.wxss**/
 .container {
 	height: 100%;
