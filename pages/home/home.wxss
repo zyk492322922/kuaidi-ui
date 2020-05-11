@@ -74,9 +74,11 @@
 	height: 50rpx;
 	padding-bottom: 15rpx;
 }
-.data-title-pic {
-	width: 45rpx;
-	height: 40rpx;
+	
+	
+.data-title-icon {
+	color: #7ACDBD;
+	font-size: 50rpx;
 	margin-right: 13rpx;
 }
 
@@ -94,7 +96,10 @@
 	align-items: center;
 }
 
-.data-content-pic {
-	width: 70rpx;
-	height: 70rpx;
+
+.data-content-icon {
+	font-size: 70rpx;
+	padding-bottom: 25rpx;
+	align-items: center;
+	color: #7ACDBD;
 }
