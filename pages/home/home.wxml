@@ -16,10 +16,15 @@
 		</view>
 	</view>
 	
+	
 	<!-- 业务触发模块 -->
 	<view class="flex navi-to-order">
 		<image src="../../image/login.png"></image>
-		<button class="login-btn" ><view>去登录></view></button>
+		<button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+		<button wx:else class="login-btn"  >
+			<view >去下单></view>
+			
+		</button>
 	</view>
 	
 	<!-- 底部数据展示 -->

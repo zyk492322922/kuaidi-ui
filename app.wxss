@@ -2,10 +2,14 @@
  
 /* 全局样式预定义 */
 page {
+	/* icon颜色 */
 	--icon-color:#7ACDBD;
+	/* 组件背景色 */
 	--bg-color-white: #ffffff;
+	/* 组件通用宽度 */
 	--body-width: 95%;
 }
+
 /**app.wxss**/
 .container {
 	height: 100%;

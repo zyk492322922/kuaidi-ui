@@ -77,7 +77,7 @@
 	
 	
 .data-title-icon {
-	color: var(--icon-color)
+	color: var(--icon-color);
 	font-size: 50rpx;
 	margin-right: 13rpx;
 }
