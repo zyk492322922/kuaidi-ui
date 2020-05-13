@@ -40,8 +40,6 @@ Page({
 					// 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
 					wx.getUserInfo({
 						success: res => {
-							// 可以将 res 发送给后台解码出 unionId   
-							app.globalData.userInfo = res.userInfo
 							// 取到的用户头像 昵称等存本地缓存
 							wx.setStorageSync('userInfo', res.userInfo)
 							wx.setStorageSync('hasUserInfo', true)
@@ -49,6 +47,22 @@ Page({
 							this.setData({
 								userInfo: res.userInfo,
 								hasUserInfo: true
+							})
+							// 同步昵称,头像到后台绑定openId,(没有实际作用)
+							wx.request({
+								url: 'http://localhost:8076/wx-api/wechat/bindNickName', 
+								data: {
+									nickName: res.userInfo.nickName,
+									avatarUrl:res.userInfo.avatarUrl,
+									province:res.userInfo.province,
+									city:res.userInfo.city
+								},
+								method: 'POST',
+								success: function(res) {
+									if(res.data.status==1){
+										console.log('昵称头像同步成功')
+									}
+								}
 							})
 							// 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
 							// 所以此处加入 callback 以防止这种情况
